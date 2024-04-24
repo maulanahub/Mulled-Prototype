@@ -21,11 +21,17 @@ button:hover {
     color: #fff;
 }
 
+.hero-mulled {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+}
+
 .panel {
     height: 100vh;
     position: relative;
     background: radial-gradient(#2c2c2c 10%,#171717 80%);
     animation: fadeInRight 2s ease-out forwards;
+    scroll-snap-align: start;
 }
 
 .hero-mulled h2 {
