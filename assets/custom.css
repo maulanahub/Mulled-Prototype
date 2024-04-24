@@ -13,5 +13,6 @@ nav.header__inline-menu ul li:nth-last-child(1) {
     color: #fff;
     margin: 0;
     font-family: "Lancelot", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
+    max-width: 614px;
 }
