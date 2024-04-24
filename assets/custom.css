@@ -83,7 +83,7 @@ img.arrrow {
 @keyframes fadeInRight {
   0% {
     opacity: 0;
-    transform: translateX(200px);
+    transform: translateX(100px);
   }
   100% {
     opacity: 1;
@@ -94,6 +94,21 @@ img.arrrow {
 /* Apply the animation to your .bg-product class */
 .bg-product {
   animation: fadeInRight .8s ease-out forwards;
+}
+
+/* Define a keyframes animation called moveUpDown */
+@keyframes moveUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Apply the animation to your .arrow class */
+.arrow {
+  animation: moveUpDown .8s linear infinite;
 }
 
 
