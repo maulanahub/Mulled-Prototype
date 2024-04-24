@@ -26,6 +26,7 @@ button:hover {
     background: url(/cdn/shop/files/bg.png) center no-repeat;
     background-size: cover;
     position: relative;
+    animation: fadeInRight 1s ease-out;
 }
 
 .hero-mulled h2 {
@@ -42,7 +43,6 @@ button:hover {
     height: 100%;
     justify-content: center;
     overflow: hidden;
-    animation: fadeInRight 1s ease-out;
 }
 
 img.img-product-1 {
