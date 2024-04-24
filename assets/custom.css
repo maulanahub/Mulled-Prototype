@@ -98,18 +98,22 @@ img.arrrow {
 
 /* Define a keyframes animation called moveUpDown */
 @keyframes moveUpDown {
-  0%, 100% {
+  0%, 20%, 80%, 100% {
     transform: translateY(0);
   }
-  50% {
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
     transform: translateY(-20px);
   }
 }
 
 /* Apply the animation to your .arrow class */
-img.arrrow {
+img.arrow {
   animation: moveUpDown .8s linear infinite;
 }
+
 
 
 @media screen and (max-width: 749px){
