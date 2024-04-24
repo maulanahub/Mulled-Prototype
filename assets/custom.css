@@ -13,6 +13,7 @@ button {
     padding: 15px 40px;
     transition: ease-in-out .25s;
     cursor: pointer;
+    width: fit-content;
 }
 
 button:hover {
