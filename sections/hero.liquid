@@ -44,9 +44,9 @@
 		scdir, hold = false;
 
 	function _scrollY(obj) {
-		var slength, plength, pan, step = 88,
-			vh = window.innerHeight / 88,
-			vmin = Math.min(window.innerHeight, window.innerWidth) / 88;
+		var slength, plength, pan, step = 89,
+			vh = window.innerHeight / 89,
+			vmin = Math.min(window.innerHeight, window.innerWidth) / 89;
 		if ((this !== undefined && this.id === 'well') || (obj !== undefined && obj.id === 'well')) {
 			pan = this || obj;
 			plength = parseInt(pan.offsetHeight / vh);
@@ -68,7 +68,7 @@
 			pan.style.transform = 'translateY(' + slength + 'vh)';
 			setTimeout(function() {
 				hold = false;
-			}, 880);
+			}, 890);
 		}
 		console.log(scdir + ':' + slength + ':' + plength + ':' + (plength - plength / pnls));
 	}
@@ -79,7 +79,7 @@
 			sY,
 			dX,
 			dY,
-			threshold = 88,
+			threshold = 89,
 			/*[min distance traveled to be considered swipe]*/
 			slack = 50,
 			/*[max distance allowed at the same time in perpendicular direction]*/
