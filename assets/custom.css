@@ -48,7 +48,7 @@ img.img-product-1 {
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 5%;
+    right: 10vw;
 }
 
 @media screen and (max-width: 749px){
