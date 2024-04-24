@@ -42,7 +42,7 @@ button:hover {
     justify-content: center;
 }
 
-@media screen and (max-width: 750px){
+@media screen and (max-width: 749px){
   .hero-mulled h2 {
     font-size: 22px;
   }
