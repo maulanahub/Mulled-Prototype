@@ -74,6 +74,10 @@ img.arrrow {
     margin: auto;
 }
 
+.animate-img {
+    overflow: hidden;
+}
+
 /* Define a keyframes animation called fadeInRight */
 @keyframes fadeInRight {
   0% {
