@@ -36,20 +36,7 @@
     </div>
   </div>
 </div>
- <script>
-  const container = document.querySelector('.container');
-  const panels = Array.from(document.querySelectorAll('.panel'));
 
-  container.addEventListener('scroll', () => {
-    panels.forEach(panel => {
-      if (panel.getBoundingClientRect().top < window.innerHeight) {
-        panel.style.height = '100vh';
-      } else {
-        panel.style.height = '50vh';
-      }
-    });
-  });
-</script>
 {% schema %}
   {
     "name": "Morph Mulled",

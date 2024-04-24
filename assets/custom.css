@@ -21,12 +21,8 @@ button:hover {
     color: #fff;
 }
 
-.hero-mulled {
-  height: 100vh
-}
-
 .panel {
-    height: 50vh;
+    height: 100vh;
     position: relative;
     background: radial-gradient(#2c2c2c 10%,#171717 80%);
     animation: fadeInRight 2s ease-out forwards;
