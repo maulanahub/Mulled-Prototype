@@ -2,3 +2,7 @@ nav.header__inline-menu ul li:nth-last-child(1) {
     border: 1px solid #fff;
     border-radius: 5px;
 }
+
+.hero-mulled {
+  background: url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg.png)
+}
