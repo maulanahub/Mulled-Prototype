@@ -11,4 +11,5 @@ nav.header__inline-menu ul li:nth-last-child(1) {
 
 .hero-mulled h2 {
     color: #fff;
+    margin: 0;
 }
