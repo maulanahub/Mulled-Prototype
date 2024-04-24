@@ -23,10 +23,10 @@ button:hover {
 
 .hero-mulled {
     height: 100vh;
-    background: url(/cdn/shop/files/bg.png) center no-repeat;
-    background-size: cover;
     position: relative;
     animation: fadeInRight 1s ease-out;
+    background: radial-gradient(#2c2c2c 10%,#171717 80%);
+    animation: fadeInRight 2s ease-out forwards;
 }
 
 .hero-mulled h2 {
