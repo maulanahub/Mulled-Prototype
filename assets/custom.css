@@ -58,6 +58,7 @@ img.bg-product {
     bottom: 0;
     margin: auto;
     right: 0;
+    overflow: hidden;
 }
 
 img.bg-top-left {
