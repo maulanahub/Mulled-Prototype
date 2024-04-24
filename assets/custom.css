@@ -91,7 +91,7 @@ img.arrow {
 
 /* Apply the animation to your .bg-product class */
 .bg-product {
-  animation: fadeInRight 1.5s ease-out forwards;
+  animation: fadeInRight 2s ease-out forwards;
 }
 
 /* Define a keyframes animation called moveUpDown */
