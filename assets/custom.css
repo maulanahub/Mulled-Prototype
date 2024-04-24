@@ -65,6 +65,14 @@ img.bg-top-left {
     left: 0;
 }
 
+img.arrrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
 @media screen and (max-width: 749px){
   .hero-mulled h2 {
     font-size: 22px;
