@@ -59,6 +59,12 @@ img.bg-product {
     right: 0;
 }
 
+img.bg-top-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 @media screen and (max-width: 749px){
   .hero-mulled h2 {
     font-size: 22px;
