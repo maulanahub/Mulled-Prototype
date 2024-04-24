@@ -21,6 +21,10 @@ button:hover {
     color: #fff;
 }
 
+.panel {
+    height: 100vh;
+}
+
 .hero-mulled {
     height: 100vh;
     position: relative;
