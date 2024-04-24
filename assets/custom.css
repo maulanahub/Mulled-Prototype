@@ -76,7 +76,7 @@ img.arrrow {
 /* Define a keyframes animation called fadeInRight */
 @keyframes fadeInRight {
   0% {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(200px);
   }
   100% {
@@ -87,7 +87,7 @@ img.arrrow {
 
 /* Apply the animation to your .bg-product class */
 .bg-product {
-  animation: fadeInRight .5s ease-out forwards;
+  animation: fadeInRight .8s ease-out forwards;
 }
 
 
