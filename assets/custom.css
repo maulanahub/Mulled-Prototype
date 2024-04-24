@@ -4,5 +4,11 @@ nav.header__inline-menu ul li:nth-last-child(1) {
 }
 
 .hero-mulled {
-  background: url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg.png)
+    height: 100vh;
+    background: url(/cdn/shop/files/bg.png) center no-repeat;
+    background-size: cover;
+}
+
+.hero-mulled h2 {
+    color: #fff;
 }
