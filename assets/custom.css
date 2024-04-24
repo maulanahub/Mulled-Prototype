@@ -3,6 +3,10 @@ nav.header__inline-menu ul li:nth-last-child(1) {
     border-radius: 5px;
 }
 
+button {
+  font-family: "Onest", sans-serif;
+}
+
 .hero-mulled {
     height: 100vh;
     background: url(/cdn/shop/files/bg.png) center no-repeat;
