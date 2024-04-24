@@ -111,7 +111,7 @@ img.arrow {
 
 /* Apply the animation to your .arrow class */
 img.arrow {
-  animation: moveUpDown .8s linear infinite;
+    animation: moveUpDown 1.8s linear infinite;
 }
 
 
