@@ -22,9 +22,10 @@ button:hover {
     height: 100vh;
 }
 
-.hero-mulled {
-    scroll-snap-type: y mandatory;
-    overflow: auto;
+.well {
+	position: relative;
+	overflow: hidden;
+	transition: 1s cubic-bezier(0.5, 0, 0.5, 1);
 }
 
 .panel {
@@ -32,7 +33,6 @@ button:hover {
     position: relative;
     background: radial-gradient(#2c2c2c 10%,#171717 80%);
     animation: fadeInRight 2s ease-out forwards;
-    scroll-snap-align: start;
 }
 
 .hero-mulled h2 {
