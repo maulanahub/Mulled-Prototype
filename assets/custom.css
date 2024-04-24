@@ -73,6 +73,24 @@ img.arrrow {
     margin: auto;
 }
 
+/* Define a keyframes animation called fadeInRight */
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation to your .bg-product class */
+.bg-product {
+  animation: fadeInRight 2s ease-out forwards;
+}
+
+
 @media screen and (max-width: 749px){
   .hero-mulled h2 {
     font-size: 22px;
