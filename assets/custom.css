@@ -57,6 +57,7 @@ img.img-product-1 {
     right: 10vw;    
     transition: transform 1s ease-out;
     animation: fadeInRight 2s ease-out forwards;
+    z-index: 99;
 }
 
 img.bg-product {
