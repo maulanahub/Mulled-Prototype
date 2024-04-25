@@ -55,7 +55,7 @@ img.img-product-1 {
     bottom: 0;
     margin: auto;
     right: 10vw;    
-    transition: transform 1s ease-out;
+    transition: transform .5s ease-out;
     animation: fadeInRight 2s ease-out forwards;
     z-index: 99;
 }
