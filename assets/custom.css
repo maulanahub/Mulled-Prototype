@@ -114,7 +114,10 @@ img.arrow {
 .bg-animate-8,
 .bg-animate-9,
 .bag-open {
-    position: absolute;  
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0; 
 }
 
 /* Define a keyframes animation called moveUpDown */
