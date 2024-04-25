@@ -31,10 +31,12 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition < lastScrollPosition) {
         // Page is scrolling up
-        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
+        imgProduct1.style.transform = `translate(0, 0) translateY(${scrollPosition}px) rotate(0)`;
+        imgProduct1.style.left = '';
     } else {
         // Page is scrolling down
-        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
+        imgProduct1.style.transform = `translate(-50%, -50%) translateY(${scrollPosition}px) rotate(-8deg)`;
+        imgProduct1.style.left = '50%';
     }
 
     // Update the last scroll position
