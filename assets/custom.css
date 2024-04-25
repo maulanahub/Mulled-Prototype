@@ -121,8 +121,7 @@ img.arrow {
     top: 0;
     bottom: 0;
     transform: scale(0.1);
-    transition: 0.5s;
-    animation-delay: 10s;
+    transition: 5s;
 }
 
 /* Define a keyframes animation called moveUpDown */
