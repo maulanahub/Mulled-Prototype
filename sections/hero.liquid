@@ -31,15 +31,20 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition < lastScrollPosition) {
         // Page is scrolling up
-        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg)`;
+        imgProduct1.style.right = '';
+        imgProduct1.style.left = '';
     } else {
         // Page is scrolling down
-        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg)`;
+        imgProduct1.style.right = '0';
+        imgProduct1.style.left = '0';
     }
 
     // Update the last scroll position
     lastScrollPosition = scrollPosition;
 });
+
 
 
 </script>
