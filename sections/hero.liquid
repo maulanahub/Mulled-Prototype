@@ -74,7 +74,7 @@ window.addEventListener('scroll', function() {
     var values = matrix.split('(')[1].split(')')[0].split(',');
     var translateY = values.length > 5 ? parseFloat(values[5]) : 0;
 
-    if (translateY => 1000) {
+    if (translateY >= 1000) {
         if (scrollPosition > lastScrollPosition ) {
             // Page is scrolling down
             bgAnimate1.style.transform = 'scale(1)';
