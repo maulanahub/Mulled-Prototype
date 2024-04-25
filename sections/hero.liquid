@@ -50,12 +50,33 @@ window.addEventListener('scroll', function() {
         imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
     }
 
-    if (scrollPosition > lastScrollPosition ) {
-        // Page is scrolling down
-        bgAnimate1.style.transform = 'scale(1)';
-    } else {
-        // Page is scrolling up
-        bgAnimate1.style.transform = '';
+    // if (scrollPosition > lastScrollPosition ) {
+    //     // Page is scrolling down
+    //     bgAnimate1.style.transform = 'scale(1)';
+    // } else {
+    //     // Page is scrolling up
+    //     bgAnimate1.style.transform = '';
+    // }
+
+
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var imgProduct1 = document.querySelector('.img-product-1');
+    var bgAnimate1 = document.querySelector('.bgAnimate1');
+
+    // Get the translateY value of imgProduct1
+    var matrix = window.getComputedStyle(imgProduct1).getPropertyValue('transform');
+    var values = matrix.split('(')[1].split(')')[0].split(',');
+    var translateY = values.length > 5 ? parseFloat(values[5]) : 0;
+
+    if (translateY === 1016) {
+        if (scrollPosition > lastScrollPosition ) {
+            // Page is scrolling down
+            bgAnimate1.style.transform = 'scale(1)';
+        } else {
+            // Page is scrolling up
+            bgAnimate1.style.transform = '';
+        }
     }
 
     // Update the last scroll position
