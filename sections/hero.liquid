@@ -23,13 +23,23 @@
 </div>
 <script>
 // JavaScript
+var lastScrollPosition = 0;
+
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     var imgProduct1 = document.querySelector('.img-product-1');
 
-    imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg)`;
-});
+    if (scrollPosition < lastScrollPosition) {
+        // Page is scrolling up
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg)`;
+    } else {
+        // Page is scrolling down
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg)`;
+    }
 
+    // Update the last scroll position
+    lastScrollPosition = scrollPosition;
+});
 
 </script>
 {% schema %}
