@@ -80,16 +80,21 @@ window.addEventListener('scroll', function() {
         document.querySelector('img.bg-animate-7').style.cssText = '';
         document.querySelector('img.bg-animate-8').style.cssText = '';
         document.querySelector('img.bg-animate-9').style.cssText = ')';
-    }
-
-    
-
-    
+    }    
 
     // Update the last scroll position
     lastScrollPosition = scrollPosition;
 });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
 
 </script>
