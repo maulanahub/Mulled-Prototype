@@ -30,6 +30,16 @@
     </div>
   </div>
 </div>
+<script>
+  // JavaScript
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.scrollY;
+    var imgProduct1 = document.querySelector('.img-product-1');
+
+    imgProduct1.style.transform = `translateY(${scrollPosition}px)`;
+});
+
+</script>
 {% schema %}
   {
     "name": "Morph Mulled",
