@@ -45,11 +45,11 @@ window.addEventListener('scroll', function() {
     if (scrollPosition < lastScrollPosition) {
         // Page is scrolling up
         imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
-        imgProduct1.style.left = '0';
+        imgProduct1.style.left = '';
     } else {
         // Page is scrolling down
         imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
-        imgProduct1.style.left = '50%;'
+        imgProduct1.style.left = '50%';
     }
 
     if (scrollPosition > lastScrollPosition ) {
