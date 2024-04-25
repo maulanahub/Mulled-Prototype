@@ -40,6 +40,7 @@ window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     var imgProduct1 = document.querySelector('.img-product-1');
     var bagOpen = document.querySelector('.bag-open');
+    var bgAnimate1 = document.querySelector('.bg-animate-1');
 
     if (scrollPosition < lastScrollPosition) {
         // Page is scrolling up
@@ -51,10 +52,10 @@ window.addEventListener('scroll', function() {
 
     if (scrollPosition > lastScrollPosition) {
         // Page is scrolling down
-        bagOpen.style.transform = 'scale(1)';
+        bgAnimate1.style.transform = 'scale(1)';
     } else {
         // Page is scrolling up
-        bagOpen.style.transform = '';
+        bgAnimate1.style.transform = '';
     }
 
     // Update the last scroll position
