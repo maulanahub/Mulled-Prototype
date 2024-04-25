@@ -39,6 +39,7 @@ var lastScrollPosition = 0;
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     var imgProduct1 = document.querySelector('.img-product-1');
+    var bagOpen = document.querySelector('.bag-open');
 
     if (scrollPosition < lastScrollPosition) {
         // Page is scrolling up
@@ -46,6 +47,14 @@ window.addEventListener('scroll', function() {
     } else {
         // Page is scrolling down
         imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
+    }
+
+    if (scrollPosition > lastScrollPosition) {
+        // Page is scrolling down
+        bagOpen.style.transform = 'scale(1)';
+    } else {
+        // Page is scrolling up
+        bagOpen.style.transform = '';
     }
 
     // Update the last scroll position
