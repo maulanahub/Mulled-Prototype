@@ -120,7 +120,7 @@ img.arrow {
     right: 0;
     top: 0;
     bottom: 0;
-    scale: 0.1;
+    transform: scale(0.1);
     transition: 0.5s;
 }
 
