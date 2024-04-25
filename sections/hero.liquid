@@ -58,6 +58,13 @@ window.addEventListener('scroll', function() {
     //     bgAnimate1.style.transform = '';
     // }
 
+    
+
+    // Update the last scroll position
+    lastScrollPosition = scrollPosition;
+});
+
+var lastScrollPosition = 0;
 
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
@@ -82,6 +89,7 @@ window.addEventListener('scroll', function() {
     // Update the last scroll position
     lastScrollPosition = scrollPosition;
 });
+
 
 
 </script>
