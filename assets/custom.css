@@ -104,6 +104,19 @@ img.arrow {
   animation: fadeInRight 2s ease-out forwards;
 }
 
+.bg-animate-1,
+.bg-animate-2,
+.bg-animate-3,
+.bg-animate-4,
+.bg-animate-5,
+.bg-animate-6,
+.bg-animate-7,
+.bg-animate-8,
+.bg-animate-9,
+.bag-open {
+    position: absolute;  
+}
+
 /* Define a keyframes animation called moveUpDown */
 @keyframes moveUpDown {
   0%, 20%, 80%, 100% {
