@@ -87,10 +87,6 @@ img.arrow {
 
 /* CSS */
 img.img-product-1 {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     transition: transform 0.3s ease-out;
 }
 
