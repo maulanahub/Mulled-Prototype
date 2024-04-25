@@ -55,7 +55,8 @@ img.img-product-1 {
     top: 0;
     bottom: 0;
     margin: auto;
-    right: 10vw;
+    right: 10vw;    
+    transition: transform 0.3s ease-out;
 }
 
 img.bg-product {
@@ -83,11 +84,6 @@ img.arrow {
 
 .animate-img {
     overflow: hidden;
-}
-
-/* CSS */
-img.img-product-1 {
-    transition: transform 0.3s ease-out;
 }
 
 
