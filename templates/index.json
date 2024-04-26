@@ -19,12 +19,19 @@
     },
     "hero_xnR9eK": {
       "type": "hero",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "mulled_canvas_FegGhr": {
+      "type": "mulled-canvas",
       "settings": {
       }
     }
   },
   "order": [
     "image_banner",
-    "hero_xnR9eK"
+    "hero_xnR9eK",
+    "mulled_canvas_FegGhr"
   ]
 }
