@@ -58,46 +58,20 @@
 var lastScrollPosition = 0;
 
 window.addEventListener('scroll', function() {
-    // var scrollPosition = window.scrollY;
+    var scrollPosition = window.scrollY;
     var imgProduct1 = document.querySelector('.img-product-1');
     var bagOpen = document.querySelector('.bag-open');
     var bgAnimate1 = document.querySelector('.bg-animate-1');
 
-    // if (scrollPosition < lastScrollPosition) {
-    //     // Page is scrolling up
-    //     imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
-    //     imgProduct1.style.left = '';
-    // } else {
-    //     // Page is scrolling down
-    //     imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
-    //     imgProduct1.style.left = '50%';
-    // }
-
-    var heroMullet = document.querySelector('.hero-mullet');
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    var lastScrollPosition = 0;
-
-    // Check if hero-mullet is in viewport
-    var rect = heroMullet.getBoundingClientRect();
-    var isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-    if (isInViewport) {
-        if (scrollPosition < lastScrollPosition) {
-            // Page is scrolling up
-            imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
-            imgProduct1.style.left = '';
-        } else {
-            // Page is scrolling down
-            imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
-            imgProduct1.style.left = '50%';
-        }
-    } else {
-        // Stop moving imgProduct1
-        imgProduct1.style.transform = '';
+    if (scrollPosition < lastScrollPosition) {
+        // Page is scrolling up
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
         imgProduct1.style.left = '';
+    } else {
+        // Page is scrolling down
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
+        imgProduct1.style.left = '50%';
     }
-
-
 
 
     if (scrollPosition > lastScrollPosition ) {
