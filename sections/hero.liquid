@@ -56,15 +56,15 @@ window.addEventListener('scroll', function() {
     let bagOpen = document.querySelector('.bag-open');
     let bgAnimate1 = document.querySelector('.bg-animate-1');
 
-    if (scrollPosition < lastScrollPosition) {
-        // Page is scrolling up
-        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
-        imgProduct1.style.left = '';
-    } else {
-        // Page is scrolling down
-        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
-        imgProduct1.style.left = '50%';
-    }
+    // if (scrollPosition < lastScrollPosition) {
+    //     // Page is scrolling up
+    //     imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
+    //     imgProduct1.style.left = '';
+    // } else {
+    //     // Page is scrolling down
+    //     imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
+    //     imgProduct1.style.left = '50%';
+    // }
 
     let section2 = document.querySelector('.section-2');
     let scrollPosition2 = window.pageYOffset || document.documentElement.scrollTop;
