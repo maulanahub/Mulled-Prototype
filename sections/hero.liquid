@@ -60,44 +60,19 @@ window.addEventListener('scroll', function() {
     }
 
 
-    // if (scrollPosition > lastScrollPosition) {
-    //     // Page is scrolling down
-    //     document.querySelector('img.bg-animate-2').style.cssText = 'left: -35rem; bottom: -35rem; transform: scale(1) ';
-    //     document.querySelector('img.bg-animate-3').style.cssText = 'left: -55rem; transform: scale(1)';
-    //     document.querySelector('img.bg-animate-4').style.cssText = 'left: -40rem; bottom: 38rem; transform: scale(1)';
-    //     document.querySelector('img.bg-animate-5').style.cssText = 'left: -35rem; bottom: 55rem; transform: scale(1)';
-    //     document.querySelector('img.bg-animate-6').style.cssText = 'right: -35rem; bottom: 30rem; transform: scale(1)';
-    //     document.querySelector('img.bg-animate-7').style.cssText = 'right: -27rem; bottom: 45rem; transform: scale(1)';
-    //     document.querySelector('img.bg-animate-8').style.cssText = 'right: -35rem; bottom: -10rem; transform: scale(1)';
-    //     document.querySelector('img.bg-animate-9').style.cssText = 'right: -25rem; bottom: -35rem; transform: scale(1)';
-    // } else {
-    //     // Page is scrolling up
-    // }    
-
-    var section2 = document.querySelector('.section-2');
-    var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
-    var lastScrollPosition = 0;
-
-    // Check if section-2 is in viewport
-    var rect = section2.getBoundingClientRect();
-    var isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-    if (isInViewport) {
-        if (scrollPosition > lastScrollPosition) {
-            // Page is scrolling down
-            document.querySelector('img.bg-animate-2').style.cssText = 'left: -35rem; bottom: -35rem; transform: scale(1)';
-            document.querySelector('img.bg-animate-3').style.cssText = 'left: -55rem; transform: scale(1)';
-            document.querySelector('img.bg-animate-4').style.cssText = 'left: -40rem; bottom: 38rem; transform: scale(1)';
-            document.querySelector('img.bg-animate-5').style.cssText = 'left: -35rem; bottom: 55rem; transform: scale(1)';
-            document.querySelector('img.bg-animate-6').style.cssText = 'right: -35rem; bottom: 30rem; transform: scale(1)';
-            document.querySelector('img.bg-animate-7').style.cssText = 'right: -27rem; bottom: 45rem; transform: scale(1)';
-            document.querySelector('img.bg-animate-8').style.cssText = 'right: -35rem; bottom: -10rem; transform: scale(1)';
-            document.querySelector('img.bg-animate-9').style.cssText = 'right: -25rem; bottom: -35rem; transform: scale(1)';
-        } else {
-            // Page is scrolling up
-            // Add your code here for when the page is scrolling up
-        }
-    }
+    if (scrollPosition > lastScrollPosition) {
+        // Page is scrolling down
+        document.querySelector('img.bg-animate-2').style.cssText = 'left: -35rem; bottom: -35rem; transform: scale(1) ';
+        document.querySelector('img.bg-animate-3').style.cssText = 'left: -55rem; transform: scale(1)';
+        document.querySelector('img.bg-animate-4').style.cssText = 'left: -40rem; bottom: 38rem; transform: scale(1)';
+        document.querySelector('img.bg-animate-5').style.cssText = 'left: -35rem; bottom: 55rem; transform: scale(1)';
+        document.querySelector('img.bg-animate-6').style.cssText = 'right: -35rem; bottom: 30rem; transform: scale(1)';
+        document.querySelector('img.bg-animate-7').style.cssText = 'right: -27rem; bottom: 45rem; transform: scale(1)';
+        document.querySelector('img.bg-animate-8').style.cssText = 'right: -35rem; bottom: -10rem; transform: scale(1)';
+        document.querySelector('img.bg-animate-9').style.cssText = 'right: -25rem; bottom: -35rem; transform: scale(1)';
+    } else {
+        // Page is scrolling up
+    }    
 
     // Update the last scroll position
     lastScrollPosition = scrollPosition;
