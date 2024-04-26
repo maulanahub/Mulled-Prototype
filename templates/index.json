@@ -19,6 +19,7 @@
     },
     "hero_xnR9eK": {
       "type": "hero",
+      "disabled": true,
       "settings": {
       }
     },
