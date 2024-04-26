@@ -31,64 +31,26 @@
     </div>
   </div> 
       <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Simple_Doypack_Mockup_1_1.png" width="auto" height="auto" class="img-product-1">
-  <div class="panel section-3">
-    <div class="bg-animate" id="bg-animate">
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/pouder1_4x_1.png" width="auto" height="auto" class="bg-animate-1">
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_6.png" width="auto" height="auto" class="bg-animate-2">
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_4.png" width="auto" height="auto" class="bg-animate-3">      
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_5.png" width="auto" height="auto" class="bg-animate-4">           
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_7.png" width="auto" height="auto" class="bg-animate-5">
-      <!-- <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Spiced_Bag_Open_v2_PNG_1.png" width="auto" height="auto" class="bag-open"> -->
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_3.png" width="auto" height="auto" class="bg-animate-6">
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_1.png" width="auto" height="auto" class="bg-animate-7">      
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_8.png" width="auto" height="auto" class="bg-animate-9">
-      <img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Layer_2.png" width="auto" height="auto" class="bg-animate-8">
-    </div>
-  </div>
 </div>
 <script>
 // JavaScript
-let lastScrollPosition = 0;
+var lastScrollPosition = 0;
 
 window.addEventListener('scroll', function() {
-    let scrollPosition = window.scrollY;
-    let imgProduct1 = document.querySelector('.img-product-1');
-    let bagOpen = document.querySelector('.bag-open');
-    let bgAnimate1 = document.querySelector('.bg-animate-1');
+    var scrollPosition = window.scrollY;
+    var imgProduct1 = document.querySelector('.img-product-1');
+    var bagOpen = document.querySelector('.bag-open');
+    var bgAnimate1 = document.querySelector('.bg-animate-1');
 
-    // if (scrollPosition < lastScrollPosition) {
-    //     // Page is scrolling up
-    //     imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
-    //     imgProduct1.style.left = '';
-    // } else {
-    //     // Page is scrolling down
-    //     imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
-    //     imgProduct1.style.left = '50%';
-    // }
-
-    let section2 = document.querySelector('.section-2');
-    let scrollPosition2 = window.pageYOffset || document.documentElement.scrollTop;
-
-    // Check if section-2 is in viewport
-    let rect = section2.getBoundingClientRect();
-    let isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
-
-    if (isInViewport) {
-        if (scrollPosition2 < lastScrollPosition) {
-            // Page is scrolling up
-            imgProduct1.style.transform = `translateY(${scrollPosition2}px) rotate(0deg) translateX(0)`;
-            imgProduct1.style.left = '';
-        } else {
-            // Page is scrolling down
-            imgProduct1.style.transform = `translateY(${scrollPosition2}px) rotate(-8deg) translateX(-20vw)`;
-            imgProduct1.style.left = '50%';
-        }
-    } else {
-        // Stop moving imgProduct1
-        imgProduct1.style.transform = '';
+    if (scrollPosition < lastScrollPosition) {
+        // Page is scrolling up
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(0deg) translateX(0)`;
         imgProduct1.style.left = '';
+    } else {
+        // Page is scrolling down
+        imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
+        imgProduct1.style.left = '50%';
     }
-
 
 
     if (scrollPosition > lastScrollPosition ) {
@@ -121,16 +83,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        let target = document.querySelector(this.getAttribute('href'));
-        let targetPosition = target.getBoundingClientRect().top;
-        let startPosition = window.pageYOffset;
-        let distance = targetPosition;
-        let duration = 1500; // Increase this value to slow down the scroll speed
-        let start = null;
+        var target = document.querySelector(this.getAttribute('href'));
+        var targetPosition = target.getBoundingClientRect().top;
+        var startPosition = window.pageYOffset;
+        var distance = targetPosition;
+        var duration = 1500; // Increase this value to slow down the scroll speed
+        var start = null;
 
         function step(timestamp) {
             if (!start) start = timestamp;
-            let progress = timestamp - start;
+            var progress = timestamp - start;
             window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
             if (progress < duration) window.requestAnimationFrame(step);
         }
