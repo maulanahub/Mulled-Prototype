@@ -34,13 +34,13 @@
 </div>
 <script>
 // JavaScript
-var lastScrollPosition = 0;
+let lastScrollPosition = 0;
 
 window.addEventListener('scroll', function() {
-    var scrollPosition = window.scrollY;
-    var imgProduct1 = document.querySelector('.img-product-1');
-    var bagOpen = document.querySelector('.bag-open');
-    var bgAnimate1 = document.querySelector('.bg-animate-1');
+    let scrollPosition = window.scrollY;
+    let imgProduct1 = document.querySelector('.img-product-1');
+    let bagOpen = document.querySelector('.bag-open');
+    let bgAnimate1 = document.querySelector('.bg-animate-1');
 
     if (scrollPosition < lastScrollPosition) {
         // Page is scrolling up
@@ -51,6 +51,31 @@ window.addEventListener('scroll', function() {
         imgProduct1.style.transform = `translateY(${scrollPosition}px) rotate(-8deg) translateX(-20vw)`;
         imgProduct1.style.left = '50%';
     }
+
+    let section2 = document.querySelector('.section-2');
+    let scrollPosition2 = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if section-2 is in viewport
+    let rect = section2.getBoundingClientRect();
+    let isInViewport = rect.top <= window.innerHeight && rect.bottom >= 0;
+
+    if (isInViewport) {
+        if (scrollPosition2 < lastScrollPosition) {
+            // Page is scrolling up
+            imgProduct1.style.transform = `translateY(${scrollPosition2}px) rotate(0deg) translateX(0)`;
+            imgProduct1.style.left = '';
+        } else {
+            // Page is scrolling down
+            imgProduct1.style.transform = `translateY(${scrollPosition2}px) rotate(-8deg) translateX(-20vw)`;
+            imgProduct1.style.left = '50%';
+        }
+    } else {
+        // Stop moving imgProduct1
+        imgProduct1.style.transform = '';
+        imgProduct1.style.left = '';
+    }
+
+
 
     if (scrollPosition > lastScrollPosition ) {
         // Page is scrolling down
@@ -82,16 +107,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
-        var target = document.querySelector(this.getAttribute('href'));
-        var targetPosition = target.getBoundingClientRect().top;
-        var startPosition = window.pageYOffset;
-        var distance = targetPosition;
-        var duration = 1500; // Increase this value to slow down the scroll speed
-        var start = null;
+        let target = document.querySelector(this.getAttribute('href'));
+        let targetPosition = target.getBoundingClientRect().top;
+        let startPosition = window.pageYOffset;
+        let distance = targetPosition;
+        let duration = 1500; // Increase this value to slow down the scroll speed
+        let start = null;
 
         function step(timestamp) {
             if (!start) start = timestamp;
-            var progress = timestamp - start;
+            let progress = timestamp - start;
             window.scrollTo(0, easeInOutQuad(progress, startPosition, distance, duration));
             if (progress < duration) window.requestAnimationFrame(step);
         }
