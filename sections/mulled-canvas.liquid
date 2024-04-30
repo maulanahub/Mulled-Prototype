@@ -25,7 +25,9 @@
     top: 40vh;
     left: 28vw;
     transform: translate(-50%, -50%);
+    transition: opacity 2s;
   }
+
 
   .title h2 {
     color: #fff;
@@ -155,12 +157,14 @@ function imageSequence(config) {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    document.querySelector(".title").style.display = "none";
+  var titleElement = document.querySelector(".title");
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    titleElement.style.opacity = "0";
   } else {
-    document.querySelector(".title").style.display = "block";
+    titleElement.style.opacity = "1";
   }
 }
+
 
 
 </script>
