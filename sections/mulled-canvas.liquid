@@ -151,6 +151,18 @@ function imageSequence(config) {
   });
 }
 
+// scroll title
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    document.querySelector(".title").style.display = "none";
+  } else {
+    document.querySelector(".title").style.display = "block";
+  }
+}
+
+
 </script>
 
 {% schema %}
