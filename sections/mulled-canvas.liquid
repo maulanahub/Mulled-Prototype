@@ -269,16 +269,19 @@ function imageSequence2(config) {
 let canvas1 = document.getElementById('image-sequence');
 let canvas2 = document.getElementById('image-sequence-2');
 
-// Function to show the first canvas and hide the second
 function showFirstCanvas() {
   canvas1.style.opacity = '1';
   canvas2.style.opacity = '0';
+  canvas1.classList.add('canvas-fade-in');
+  canvas2.classList.remove('canvas-fade-in');
 }
 
-// Function to show the second canvas and hide the first
+// Function to show the second canvas and hide the first with animation
 function showSecondCanvas() {
   canvas1.style.opacity = '0';
   canvas2.style.opacity = '1';
+  canvas2.classList.add('canvas-fade-in');
+  canvas1.classList.remove('canvas-fade-in');
 }
 
 // Select all elements with the class 'img-pd1' and 'img-pd2'
