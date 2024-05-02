@@ -211,6 +211,10 @@ img.arrow {
   display: none;
 }
 
+.section-m-2 img{
+  max-width: 100%;
+}
+
 @media screen and (max-width: 1024px){
   .canvas-container {
     display: none;
@@ -250,10 +254,6 @@ img.arrow {
     display: block;
     background: #171717;
     margin-top: -150px;
-  }
-
-  .section-m-2 img{
-    max-width: 100%;
   }
   
 }
