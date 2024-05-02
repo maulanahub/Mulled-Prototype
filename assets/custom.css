@@ -212,7 +212,7 @@ img.arrow {
     display: none;
   }
   .section-m-1 {
-    background: url('https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg_27b58800-43be-4c91-8884-dc0ddb2a5f54.png') top-center no-repeat;
+    background: url('https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg_27b58800-43be-4c91-8884-dc0ddb2a5f54.png') top center no-repeat;
     background-position: cover;
   }
 }
