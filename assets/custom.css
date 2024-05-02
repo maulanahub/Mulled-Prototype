@@ -104,7 +104,11 @@ img.arrow {
 }
 
 .product-option img {
-    padding: 0 .5em;
+    padding: 0 .5em .5em;
+}
+
+img.product-active {
+    border-bottom: 4px solid #000;
 }
 
 
