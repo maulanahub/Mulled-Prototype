@@ -188,7 +188,7 @@ img.arrow {
 @keyframes fadeInFromTop {
   0% {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-30px);
   }
   100% {
     opacity: 1;
@@ -197,7 +197,7 @@ img.arrow {
 }
 
 .canvas-fade-in {
-  animation: fadeInFromTop 1s ease forwards;
+  animation: fadeInFromTop 1.5s ease forwards;
 }
 
 
