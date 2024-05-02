@@ -103,6 +103,10 @@ img.arrow {
     border-radius: 10px 10px 0 0;
 }
 
+.product-option img {
+    padding: 0 .5em;
+}
+
 
 /* end canvas */
 
