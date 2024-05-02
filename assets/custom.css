@@ -185,6 +185,22 @@ img.arrow {
     animation: moveUpDown 1.8s linear infinite;
 }
 
+@keyframes fadeInFromTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.canvas-fade-in {
+  animation: fadeInFromTop 1s ease forwards;
+}
+
+
 
 
 @media screen and (max-width: 749px){
