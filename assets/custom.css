@@ -87,6 +87,25 @@ img.arrow {
     overflow: hidden;
 }
 
+/* canvas */
+
+.title.product-nav {
+    top: auto;
+    width: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 10;
+    transform: none;
+    background: #0000004a;
+    padding: 1em 5em;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* end canvas */
+
 
 
 /* Define a keyframes animation called fadeInRight */
