@@ -207,6 +207,10 @@ img.arrow {
   }
 }
 
+.section-m-2 {
+  display: none;
+}
+
 @media screen and (max-width: 1024px){
   .canvas-container {
     display: none;
@@ -240,5 +244,9 @@ img.arrow {
     text-align: center;
     width: 100%;
     margin: 0!important;
+  }
+
+  .section-m-2 {
+    display: block;
   }
 }
