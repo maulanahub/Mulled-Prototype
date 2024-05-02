@@ -243,11 +243,15 @@ img.arrow {
     font-size: 16px;
   }
   
-  .title.product-nav {
+  /* .title.product-nav {
     padding: 1em;
     text-align: center;
     width: 100%;
     margin: 0!important;
+  } */
+
+  .title.product-nav {
+    display: none;
   }
 
   .section-m-2 {
