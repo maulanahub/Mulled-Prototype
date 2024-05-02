@@ -251,4 +251,9 @@ img.arrow {
     background: #171717;
     margin-top: -150px;
   }
+
+  .section-m-2 img{
+    max-width: 100%;
+  }
+  
 }
