@@ -266,30 +266,27 @@ function showSecondCanvas() {
   canvas2.style.opacity = '1';
 }
 
-// Function to toggle the 'product-active' class
-function toggleProductActive(classSelector) {
-  // Select all elements with the given class
-  const elements = document.querySelectorAll(classSelector);
+// Select all elements with the class 'img-pd1' and 'img-pd2'
+const imgPd1Elements = document.querySelectorAll('.img-pd1');
+const imgPd2Elements = document.querySelectorAll('.img-pd2');
 
-  // Iterate over the elements to add click event listeners
-  elements.forEach(clickedElement => {
-    clickedElement.addEventListener('click', () => {
-      // Add 'product-active' class to the clicked element
-      clickedElement.classList.add('product-active');
-
-      // Remove 'product-active' class from all other elements
-      elements.forEach(element => {
-        if (element !== clickedElement) {
-          element.classList.remove('product-active');
-        }
+// Function to add 'product-active' to clicked element and remove from the other
+function toggleProductActive(clickedElements, otherElements) {
+  clickedElements.forEach(element => {
+    element.addEventListener('click', () => {
+      // Add 'product-active' to the clicked element
+      element.classList.add('product-active');
+      // Remove 'product-active' from the other elements
+      otherElements.forEach(otherElement => {
+        otherElement.classList.remove('product-active');
       });
     });
   });
 }
 
-// Call the function for '.img-pd1' and '.img-pd2' classes
-toggleProductActive('.img-pd1');
-toggleProductActive('.img-pd2');
+// Call the function for img-pd1 and img-pd2 elements
+toggleProductActive(imgPd1Elements, imgPd2Elements);
+toggleProductActive(imgPd2Elements, imgPd1Elements);
 
   
 </script>
