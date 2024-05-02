@@ -230,7 +230,13 @@ function imageSequence2(config) {
 let canvas1 = document.getElementById('image-sequence');
 let canvas2 = document.getElementById('image-sequence-2');
 
+// Get product image 
+const imgPd1Elements = document.querySelector('.img-pd1');
+const imgPd2Elements = document.querySelector('.img-pd2');
+
 function showFirstCanvas() {
+  imgPd1Elements.classList.add('product-active');
+  imgPd2Elements.classList.remove('product-active');
   canvas1.style.opacity = '1';
   canvas2.style.opacity = '0';
   canvas1.classList.add('canvas-fade-in');
@@ -239,33 +245,35 @@ function showFirstCanvas() {
 
 // Function to show the second canvas and hide the first with animation
 function showSecondCanvas() {
+  imgPd1Elements.classList.remove('product-active');
+  imgPd2Elements.classList.add('product-active');
   canvas1.style.opacity = '0';
   canvas2.style.opacity = '1';
   canvas2.classList.add('canvas-fade-in');
   canvas1.classList.remove('canvas-fade-in');
 }
 
-// Select all elements with the class 'img-pd1' and 'img-pd2'
-const imgPd1Elements = document.querySelectorAll('.img-pd1');
-const imgPd2Elements = document.querySelectorAll('.img-pd2');
+// // Select all elements with the class 'img-pd1' and 'img-pd2'
+// const imgPd1Elements = document.querySelectorAll('.img-pd1');
+// const imgPd2Elements = document.querySelectorAll('.img-pd2');
 
-// Function to add 'product-active' to clicked element and remove from the other
-function toggleProductActive(clickedElements, otherElements) {
-  clickedElements.forEach(element => {
-    element.addEventListener('click', () => {
-      // Add 'product-active' to the clicked element
-      element.classList.add('product-active');
-      // Remove 'product-active' from the other elements
-      otherElements.forEach(otherElement => {
-        otherElement.classList.remove('product-active');
-      });
-    });
-  });
-}
+// // Function to add 'product-active' to clicked element and remove from the other
+// function toggleProductActive(clickedElements, otherElements) {
+//   clickedElements.forEach(element => {
+//     element.addEventListener('click', () => {
+//       // Add 'product-active' to the clicked element
+//       element.classList.add('product-active');
+//       // Remove 'product-active' from the other elements
+//       otherElements.forEach(otherElement => {
+//         otherElement.classList.remove('product-active');
+//       });
+//     });
+//   });
+// }
 
-// Call the function for img-pd1 and img-pd2 elements
-toggleProductActive(imgPd1Elements, imgPd2Elements);
-toggleProductActive(imgPd2Elements, imgPd1Elements);
+// // Call the function for img-pd1 and img-pd2 elements
+// toggleProductActive(imgPd1Elements, imgPd2Elements);
+// toggleProductActive(imgPd2Elements, imgPd1Elements);
 
   
 </script>
