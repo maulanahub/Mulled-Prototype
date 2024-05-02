@@ -265,34 +265,7 @@ function showSecondCanvas() {
   canvas1.style.opacity = '0';
   canvas2.style.opacity = '1';
 }
-
-  // Function to check the opacity and update the classes
-function updateClassesBasedOnOpacity() {
-  // Get the elements
-  var imageSequence = document.getElementById('image-sequence');
-  var imageSequence2 = document.getElementById('image-sequence2');
-  var imgPd1 = document.querySelector('.img-pd1');
-  var imgPd2 = document.querySelector('.img-pd2');
-
-  // Check if #image-sequence has opacity 1
-  if (window.getComputedStyle(imageSequence).opacity === '1') {
-    imgPd1.classList.add('product-active');
-    imgPd2.classList.remove('product-active');
-  }
-  // Else, check if #image-sequence2 has opacity 1
-  else if (window.getComputedStyle(imageSequence2).opacity === '1') {
-    imgPd1.classList.remove('product-active');
-    imgPd2.classList.add('product-active');
-  }
-}
-
-// Call the function to update classes
-updateClassesBasedOnOpacity();
-
-// If the opacity changes dynamically, you may need to call this function
-// in response to events that change the opacity.
-
-
+  
 </script>
 
 {% schema %}
