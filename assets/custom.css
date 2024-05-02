@@ -106,7 +106,7 @@ img.arrow {
 .product-option img {
     padding: 0 .5em .5em;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .product-option img:hover:not(.product-active) {
