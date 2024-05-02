@@ -105,6 +105,7 @@ img.arrow {
 
 .product-option img {
     padding: 0 .5em .5em;
+    cursor: pointer;
 }
 
 img.product-active {
