@@ -260,6 +260,8 @@ function imageSequence2(config) {
 // Get the canvases
 let canvas1 = document.getElementById('image-sequence');
 let canvas2 = document.getElementById('image-sequence-2');
+let redwine = document.querySelector('.red-wine');
+let greenwine = document.querySelector('.green-wine');
 
 // Get product image 
 const imgPd1Elements = document.querySelector('.img-pd1');
@@ -272,6 +274,8 @@ function showFirstCanvas() {
   canvas2.style.opacity = '0';
   canvas1.classList.add('canvas-fade-in');
   canvas2.classList.remove('canvas-fade-in');
+  redwine.classList.add('mobile-active canvas-fade-in');
+  greenwine.classList.remove('mobile-active canvas-fade-in');
 }
 
 // Function to show the second canvas and hide the first with animation
@@ -281,7 +285,9 @@ function showSecondCanvas() {
   canvas1.style.opacity = '0';
   canvas2.style.opacity = '1';
   canvas2.classList.add('canvas-fade-in');
-  canvas1.classList.remove('canvas-fade-in');
+  canvas1.classList.remove('canvas-fade-in');  
+  redwine.classList.remove('mobile-active canvas-fade-in');
+  greenwine.classList.add('mobile-active canvas-fade-in');
 }
 
   
