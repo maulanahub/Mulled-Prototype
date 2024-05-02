@@ -34,7 +34,7 @@
     top: 40vh;
     left: 28vw;
     transform: translate(-50%, -50%);
-    transition: opacity 2s;
+    transition: 2s;
   }
 
   .title h2 {
@@ -249,6 +249,10 @@ function imageSequence2(config) {
     scrollTrigger: config.scrollTrigger
   });
 }
+
+// Get the canvases
+let canvas1 = document.getElementById('image-sequence');
+let canvas2 = document.getElementById('image-sequence-2');
 
 // Function to show the first canvas and hide the second
 function showFirstCanvas() {
