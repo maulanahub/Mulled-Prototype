@@ -220,4 +220,9 @@ img.arrow {
     position: relative!important;
     margin: auto 2em!important;
   }
+  
+  .title h2 {
+    font-size: 26px!important;
+    max-width: 100%!important;
+  }
 }
