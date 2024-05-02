@@ -103,15 +103,15 @@ img.arrow {
     border-radius: 10px 10px 0 0;
 }
 
-.title .product-option img {
-    margin: 2em 0;
-}
-
 .title .product-option img, .title.product-nav .product-option img {
     padding: 0 .5em .5em;
     cursor: pointer;
     transition: 0.3s;
     margin: 0;
+}
+
+.title .product-option img {
+    margin: 2em 0;
 }
 
 .product-option img:hover:not(.product-active) {
