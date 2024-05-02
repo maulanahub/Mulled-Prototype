@@ -111,6 +111,7 @@ img.arrow {
     padding: 0 .5em .5em;
     cursor: pointer;
     transition: 0.3s;
+    margin: 0;
 }
 
 .product-option img:hover:not(.product-active) {
