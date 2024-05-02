@@ -248,5 +248,7 @@ img.arrow {
 
   .section-m-2 {
     display: block;
+    background: #171717;
+    margin-top: -150px;
   }
 }
