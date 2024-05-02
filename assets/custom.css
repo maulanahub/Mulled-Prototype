@@ -113,7 +113,7 @@ img.arrow {
     transform: translateY(-5px);
 }
 
-img.product-active {
+.title.product-nav img.product-active {
     border-bottom: 4px solid #000;
 }
 
