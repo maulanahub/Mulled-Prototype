@@ -108,6 +108,10 @@ img.arrow {
     cursor: pointer;
 }
 
+.product-option img:hover:not(.product-active) {
+    transform: translateY(-5px);
+}
+
 img.product-active {
     border-bottom: 4px solid #000;
 }
