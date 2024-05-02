@@ -225,4 +225,13 @@ img.arrow {
     font-size: 26px!important;
     max-width: 100%!important;
   }
+
+  .title .product-option img {
+    width: 40%;
+  }
+
+  button {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
 }
