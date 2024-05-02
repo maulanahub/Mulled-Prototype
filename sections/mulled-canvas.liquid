@@ -265,6 +265,29 @@ function showSecondCanvas() {
   canvas1.style.opacity = '0';
   canvas2.style.opacity = '1';
 }
+
+// Select all elements with the class 'img-pd1' and 'img-pd2'
+const imgPd1Elements = document.querySelectorAll('.img-pd1');
+const imgPd2Elements = document.querySelectorAll('.img-pd2');
+
+// Function to add 'product-active' to clicked element and remove from the other
+function toggleProductActive(clickedElements, otherElements) {
+  clickedElements.forEach(element => {
+    element.addEventListener('click', () => {
+      // Add 'product-active' to the clicked element
+      element.classList.add('product-active');
+      // Remove 'product-active' from the other elements
+      otherElements.forEach(otherElement => {
+        otherElement.classList.remove('product-active');
+      });
+    });
+  });
+}
+
+// Call the function for img-pd1 and img-pd2 elements
+toggleProductActive(imgPd1Elements, imgPd2Elements);
+toggleProductActive(imgPd2Elements, imgPd1Elements);
+
   
 </script>
 
