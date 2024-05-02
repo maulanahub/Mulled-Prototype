@@ -204,6 +204,9 @@ img.arrow {
   display: none;
 }
 
+.mobile-active {
+  display: block!important;
+}
 
 @media screen and (max-width: 749px){
   .hero-mulled h2 {
