@@ -103,7 +103,7 @@ img.arrow {
     border-radius: 10px 10px 0 0;
 }
 
-.product-option img {
+.title .product-option img, .title.product-nav .product-option img {
     padding: 0 .5em .5em;
     cursor: pointer;
     transition: 0.3s;
@@ -113,9 +113,14 @@ img.arrow {
     transform: translateY(-5px);
 }
 
+.title img.product-active {
+    border-bottom: 4px solid #fff;
+}
+
 .title.product-nav img.product-active {
     border-bottom: 4px solid #000;
 }
+
 
 
 /* end canvas */
