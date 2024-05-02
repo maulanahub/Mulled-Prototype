@@ -200,7 +200,7 @@ img.arrow {
   animation: fadeInFromTop 1.5s ease forwards;
 }
 
-.green-wine {
+.red-wine,.green-wine {
   display: none;
 }
 
