@@ -167,14 +167,14 @@ img.arrow {
     transition: 5s;
 }
 
-.title.step1 {
+.title.step1,.title.step2,.title.step3 {
     position: fixed;
     top: 20vh;
     z-index: 2;
     opacity: 0;
 }
 
-.title.step1 h2 {
+.title.step1 h2,.title.step2 h2,.title.step3 h2 {
     font-family: "Six Caps", sans-serif;
     max-width: none;
     font-size: 14vw;
@@ -183,7 +183,7 @@ img.arrow {
 }
 
 
-.title.step1 h3 {
+.title.step1 h3,.title.step2 h3,.title.step3 h3 {
     font-family: Lancelot,sans-serif;
     color: #181818;
     font-size: 3vw;
