@@ -295,18 +295,21 @@ function showSecondCanvas() {
 }
 
 // Scroll steps
-  document.addEventListener('scroll', function() {
+document.addEventListener('scroll', function() {
   const step1 = document.querySelector('.step1');
   const scrollY = window.scrollY;
 
-  if (scrollY >= 750 && scrollY <= 850) {
-    step1.classList.add('visible');
-    step1.classList.remove('hidden');
-  } else {
-    step1.classList.add('hidden');
-    step1.classList.remove('visible');
+  if (scrollY >= 750 && scrollY < 850) {
+    step1.classList.add('fade-in');
+    step1.classList.remove('fade-out');
+  } else if (scrollY >= 850) {
+    if (!step1.classList.contains('fade-out')) {
+      step1.classList.add('fade-out');
+      step1.classList.remove('fade-in');
+    }
   }
 });
+
 
 
   

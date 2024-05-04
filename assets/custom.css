@@ -185,7 +185,21 @@ img.arrow {
 .title.step1 {
   position: fixed;
   /* other styles for your element */
-  transition: opacity 0.5s, transform 0.5s;
+  opacity: 0; /* Start with the element hidden */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(100%);
+  visibility: hidden;
+  transition-delay: 0.5s; /* Delays the visibility change until after the fade-out */
 }
 
 .title.step1.visible {
