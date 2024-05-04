@@ -261,7 +261,7 @@ img.arrow {
   }
   .section-m-1 {
     background: url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Group_10.png) top right no-repeat,
-      url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg.png) no-repeat;
+      url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg.png) no-repeat, #171717;
     height: 100vh;
   }
   .s-gr {
