@@ -172,26 +172,17 @@ img.arrow {
     max-width: none;
     font-size: 14vw;
     color: #181818;
+    top: 800px;
 }
 
-.title.step1 {
-  display: none;
-}
 
-/* .title.step1 h3 {
+.title.step1 h3 {
     font-family: Lancelot,sans-serif;
     color: #181818;
     font-size: 3vw;
     margin-top: 0;
     line-height: 1;
 }
-
-.title.step1 {
-  position: fixed;
-  /* other styles for your element */
-  opacity: 0; /* Start with the element hidden */
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-} */
 
 
 /* Define a keyframes animation called moveUpDown */
