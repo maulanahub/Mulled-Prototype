@@ -4,7 +4,6 @@
       "type": "image-banner",
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Group_18.png",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "desktop_content_position": "middle-center",
@@ -17,12 +16,6 @@
         "show_text_below": false
       }
     },
-    "hero_xnR9eK": {
-      "type": "hero",
-      "disabled": true,
-      "settings": {
-      }
-    },
     "mulled_canvas_FegGhr": {
       "type": "mulled-canvas",
       "settings": {
@@ -31,7 +24,6 @@
   },
   "order": [
     "image_banner",
-    "hero_xnR9eK",
     "mulled_canvas_FegGhr"
   ]
 }
