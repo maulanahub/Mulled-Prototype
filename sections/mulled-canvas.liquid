@@ -294,8 +294,9 @@ let greenwine = document.querySelector('.green-wine');
 const imgPd1Elements = document.querySelector('.img-pd1');
 const imgPd2Elements = document.querySelector('.img-pd2');
 
-// Get BG Mobile
+// Get BG Mobile & Link
 const bgMobile = document.querySelector('.section-m-1');
+const linkProduct = document.querySelector('#link-product');
 
 function showFirstCanvas() {
   imgPd1Elements.classList.add('product-active');
@@ -307,6 +308,7 @@ function showFirstCanvas() {
   redwine.classList.add('mobile-active');
   greenwine.classList.remove('mobile-active');
   bgMobile.classList.remove('s-gr');
+  linkProduct.href = '{{ settings.product_link_1 }}';
 }
 
 // Function to show the second canvas and hide the first with animation
@@ -320,6 +322,7 @@ function showSecondCanvas() {
   redwine.classList.remove('mobile-active');
   greenwine.classList.add('mobile-active');
   bgMobile.classList.add('s-gr');
+  linkProduct.href = '{{ settings.product_link_2 }}';
 }  
 </script>
 
