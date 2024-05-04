@@ -181,6 +181,10 @@ img.arrow {
     margin-top: 0;
 }
 
+.title.step1 {
+    position: fixed;
+}
+
 /* Define a keyframes animation called moveUpDown */
 @keyframes moveUpDown {
   0%, 20%, 80%, 100% {
