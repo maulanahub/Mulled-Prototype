@@ -293,5 +293,9 @@ img.arrow {
     background: #171717;
     margin-top: -150px;
   }
+
+  .title.step1, .title.step2, .title.step3 {
+    display: none;
+  }
   
 }
