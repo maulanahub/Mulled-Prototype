@@ -181,8 +181,8 @@ function imageSequence(config) {
 //   }
 // }
 
-function scrollFunction() {
-  let titleElement = document.querySelector(".title");
+function scrollFunction(title) {
+  let titleElement = document.querySelector(title);
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     titleElement.style.opacity = "0";
   } else {
@@ -193,7 +193,7 @@ function scrollFunction() {
 // Check if the screen width is at least 1024px before executing the scroll function
 window.onscroll = function() {
   if (window.matchMedia("(min-width: 1024px)").matches) {
-    scrollFunction();
+    scrollFunction(".title");
   }
 };  
 
