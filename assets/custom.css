@@ -183,7 +183,20 @@ img.arrow {
 }
 
 .title.step1 {
-    position: fixed;
+  position: fixed;
+  /* other styles for your element */
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.title.step1.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.title.step1.hidden {
+  opacity: 0;
+  transform: translateY(100%);
+  pointer-events: none; /* Prevents click on the element when it's invisible */
 }
 
 /* Define a keyframes animation called moveUpDown */

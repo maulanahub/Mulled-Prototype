@@ -294,6 +294,21 @@ function showSecondCanvas() {
   greenwine.classList.add('mobile-active');
 }
 
+// Scroll steps
+  document.addEventListener('scroll', function() {
+  const step1 = document.querySelector('.step1');
+  const scrollY = window.scrollY;
+
+  if (scrollY >= 750 && scrollY <= 850) {
+    step1.classList.add('visible');
+    step1.classList.remove('hidden');
+  } else {
+    step1.classList.add('hidden');
+    step1.classList.remove('visible');
+  }
+});
+
+
   
 </script>
 
