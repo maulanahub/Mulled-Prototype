@@ -176,18 +176,6 @@ function imageSequence(config) {
   });
 }
 
-// scroll title
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   var titleElement = document.querySelector(".title");
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     titleElement.style.opacity = "0";
-//   } else {
-//     titleElement.style.opacity = "1";
-//   }
-// }
-
 function scrollFunction(title,px) {
   let titleElement = document.querySelector(title);
   if (document.body.scrollTop > px || document.documentElement.scrollTop > px) {
@@ -237,7 +225,6 @@ imageSequence2({
     scrub: true, // important!
   }
 });
-
 
 /*
 Helper function that handles scrubbing through a sequence of images, drawing the appropriate one to the provided canvas. 
