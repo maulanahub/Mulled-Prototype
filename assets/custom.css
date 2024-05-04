@@ -167,6 +167,10 @@ img.arrow {
     transition: 5s;
 }
 
+.title.step1 {
+    top: 155vh;
+}
+
 .title.step1 h2 {
     font-family: "Six Caps", sans-serif;
     max-width: none;
