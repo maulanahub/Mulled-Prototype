@@ -230,7 +230,7 @@ img.arrow {
 
 .mobile-active {
   display: flex!important;
-  gap: 2px;
+  gap: 1px;
   flex-direction: column;
 
 }
