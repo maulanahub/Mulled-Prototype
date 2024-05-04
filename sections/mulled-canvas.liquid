@@ -19,16 +19,16 @@
     <a href="{{ section.settings.product_link_1 }}" id="link-product"><button class="btn-mulled">Shop</button></a>
     </div>
     <div class="title step1">
-      <h2>STEP 1</h2>
-      <h3>ADD the spiced bag <br/>into a mug</h3>
+      <h2>{{ section.settings.step_title_1 }}</h2>
+      <h3>{{ section.settings.step_description_1 }}</h3>
     </div>
     <div class="title step2">
-      <h2>STEP 2</h2>
-      <h3>POUR in your choice of beverage</h3>
+      <h2>{{ section.settings.step_title_2 }}</h2>
+      <h3>{{ section.settings.step_description_2 }}</h3>
     </div>
     <div class="title step3">
-      <h2>STEP 3</h2>
-      <h3>HEAT in the microwave for 60 <br/>seconds, or heat on the stove for<br/> 4-5 minutes</h3>
+      <h2>{{ section.settings.step_title_3 }}</h2>
+      <h3>{{ section.settings.step_description_3 }}</h3>
     </div>
   </div>
   <div class="section-m-2">
@@ -296,6 +296,42 @@ function showSecondCanvas() {
         "id": "heading",
         "label" : "Hero title",
         "default": "Treat your senses to the sweet aroma, the spiced flavour and the warm textures of a Mulled Beverage. Experience this delicious drink with friends or family today."
+      },
+      {
+        "type": "text",
+        "id": "step_title_1",
+        "label" : "Step 1",
+        "default": "Step 1"
+      },
+      {
+        "type": "text",
+        "id": "step_description_1",
+        "label" : "Step description 1",
+        "default": "ADD the spiced bag into a mug"
+      },
+      {
+        "type": "text",
+        "id": "step_title_2",
+        "label" : "Step 2",
+        "default": "Step 2"
+      },
+      {
+        "type": "text",
+        "id": "step_description_2",
+        "label" : "Step description 2",
+        "default": "POUR in your choice of beverage"
+      },
+      {
+        "type": "text",
+        "id": "step_title_3",
+        "label" : "Step 3",
+        "default": "Step 3"
+      },
+      {
+        "type": "text",
+        "id": "step_description_3",
+        "label" : "Step description 3",
+        "default": "HEAT in the microwave for 60 seconds, or heat on the stove for 4-5 m"
       },
       {
         "type": "url",
