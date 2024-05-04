@@ -189,6 +189,7 @@ img.arrow {
     font-size: 3vw;
     margin-top: 0;
     line-height: 1;
+    max-width: 40vw;
 }
 
 a {
