@@ -181,9 +181,9 @@ function imageSequence(config) {
 //   }
 // }
 
-function scrollFunction(title) {
+function scrollFunction(title,px) {
   let titleElement = document.querySelector(title);
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > px || document.documentElement.scrollTop > px) {
     titleElement.style.opacity = "0";
   } else {
     titleElement.style.opacity = "1";
@@ -193,8 +193,8 @@ function scrollFunction(title) {
 // Check if the screen width is at least 1024px before executing the scroll function
 window.onscroll = function() {
   if (window.matchMedia("(min-width: 1024px)").matches) {
-    scrollFunction(".title");
-    scrollFunction(".step1");
+    scrollFunction(".title",50);
+    scrollFunction(".step1",800);
   }
 };  
 
