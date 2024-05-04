@@ -304,5 +304,9 @@ img.arrow {
   .title.step1, .title.step2, .title.step3 {
     display: none;
   }
+
+  .section-m-2 img:nth-child(1) {
+    padding-bottom: 50px;
+  }
   
 }
