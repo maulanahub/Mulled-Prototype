@@ -177,8 +177,9 @@ img.arrow {
 .title.step1 h3 {
     font-family: Lancelot,sans-serif;
     color: #000;
-    font-size: 3.5vw;
+    font-size: 3vw;
     margin-top: 0;
+    line-height: 1;
 }
 
 .title.step1 {
