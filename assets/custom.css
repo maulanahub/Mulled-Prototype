@@ -266,7 +266,7 @@ img.arrow {
   }
   .s-gr {
     background: url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/Group_17.png) top right no-repeat,
-      url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg.png) no-repeat;    
+      url(https://cdn.shopify.com/s/files/1/0659/6080/4509/files/bg.png) no-repeat, #171717;    
   }
   .title {
     position: relative!important;
