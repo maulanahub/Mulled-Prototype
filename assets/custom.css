@@ -168,8 +168,7 @@ img.arrow {
 }
 
 .title.step1 {
-    top: 155vh;
-}
+    position: fixed;
 
 .title.step1 h2 {
     font-family: "Six Caps", sans-serif;
