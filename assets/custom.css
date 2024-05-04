@@ -170,6 +170,7 @@ img.arrow {
 .title.step1 {
     position: fixed;
     z-index: 2;
+    opacity: 0;
 }
 
 .title.step1 h2 {
