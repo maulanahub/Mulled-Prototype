@@ -19,7 +19,7 @@
       <a href="#canvas-wrapper"><img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/nav-product_1.png" width="auto" height="auto" class="img-pd1 product-active" onclick="showFirstCanvas()"></a>
       <a href="#canvas-wrapper"><img src="https://cdn.shopify.com/s/files/1/0659/6080/4509/files/nav-product_2.png" width="auto" height="auto" class="img-pd2" onclick="showSecondCanvas()"></a>
     </div>
-    <a href="#" id="link-product"><button class="btn-mulled">Shop</button></a>
+    <a href="{{ section.settings.product_link_1 }}" id="link-product"><button class="btn-mulled">Shop</button></a>
     </div>
     <div class="title step1">
       <h2>STEP 1</h2>
@@ -308,7 +308,7 @@ function showFirstCanvas() {
   redwine.classList.add('mobile-active');
   greenwine.classList.remove('mobile-active');
   bgMobile.classList.remove('s-gr');
-  linkProduct.href = '{{ settings.product_link_1 }}';
+  linkProduct.href = '{{ section.settings.product_link_1 }}';
 }
 
 // Function to show the second canvas and hide the first with animation
@@ -322,7 +322,7 @@ function showSecondCanvas() {
   redwine.classList.remove('mobile-active');
   greenwine.classList.add('mobile-active');
   bgMobile.classList.add('s-gr');
-  linkProduct.href = '{{ settings.product_link_2 }}';
+  linkProduct.href = '{{ section.settings.product_link_2 }}';
 }  
 </script>
 
