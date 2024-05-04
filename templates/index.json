@@ -19,6 +19,8 @@
     "mulled_canvas_FegGhr": {
       "type": "mulled-canvas",
       "settings": {
+        "product_link_1": "shopify:\/\/collections\/all",
+        "product_link_2": "shopify:\/\/collections"
       }
     }
   },
