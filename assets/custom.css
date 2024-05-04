@@ -169,7 +169,7 @@ img.arrow {
 
 .title.step1,.title.step2,.title.step3 {
     position: fixed;
-    top: 20vh;
+    top: 15vh;
     z-index: 2;
     opacity: 0;
 }
