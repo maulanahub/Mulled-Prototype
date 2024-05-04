@@ -191,6 +191,11 @@ img.arrow {
     line-height: 1;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 /* Define a keyframes animation called moveUpDown */
 @keyframes moveUpDown {
   0%, 20%, 80%, 100% {
