@@ -191,9 +191,11 @@ function scrollFunction(title,px) {
   }
 }
 
-function stepFunction(title,pxin,pxout) {
+function stepFunction(title, pxin, pxout) {
   let titleElement = document.querySelector(title);
-  if (document.body.scrollTop > pxin || document.documentElement.scrollTop > pxin) {
+  const scrollY = window.scrollY;
+
+  if (scrollY >= pxin && scrollY <= pxout) {
     titleElement.style.opacity = "1";
   } else {
     titleElement.style.opacity = "0";
