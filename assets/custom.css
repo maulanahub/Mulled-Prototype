@@ -270,6 +270,9 @@ img.arrow {
   .title h2 {
     font-size: 5.5vw!important;
     max-width: 100%!important;
+    background: #0000005c;
+    padding: 20px;
+    border-radius: 5px;
   }
 
   .title .product-option img {
