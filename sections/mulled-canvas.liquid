@@ -1,6 +1,3 @@
-{% comment %} <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/ScrollTrigger.js"></script> {% endcomment %}
-
 <script src="https://underdogsitalia.com/wp-content/themes/underdogs/js/libraries.js?ver=20151215"></script>
 <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
 <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
@@ -99,16 +96,6 @@
   canvas#image-sequence-2 {
     opacity: 0;
   }
-
-  /* .group-step {
-    position: absolute;
-    top: 0;
-}
-
-  .group-step h2 {
-    color: #fff;
-  } */
-
   
   
 </style>
@@ -226,19 +213,6 @@ imageSequence2({
   }
 });
 
-/*
-Helper function that handles scrubbing through a sequence of images, drawing the appropriate one to the provided canvas. 
-Config object properties: 
-- urls2 [Array]: an Array of image URLs
-- canvas [Canvas]: the <canvas> object to draw to
-- scrollTrigger [Object]: an optional ScrollTrigger configuration object like {trigger: "#trigger", start: "top top", end: "+=1000", scrub: true, pin: true}
-- clear [Boolean]: if true, it'll clear out the canvas before drawing each frame (useful if your images contain transparency)
-- paused [Boolean]: true if you'd like the returned animation to be paused initially (this isn't necessary if you're passing in a ScrollTrigger that's scrubbed, but it is helpful if you just want a normal playback animation)
-- fps [Number]: optional frames per second - this determines the duration of the returned animation. This doesn't matter if you're using a scrubbed ScrollTrigger. Defaults to 30fps.
-- onUpdate [Function]: optional callback for when the Tween updates (probably not used very often). It'll pass two parameters: 1) the index of the image (zero-based), and 2) the Image that was drawn to the canvas
-
-Returns a Tween instance
-*/
 function imageSequence2(config) {
   let playhead = {frame: 0},
       canvas = gsap.utils.toArray(config.canvas)[0] || console.warn("canvas not defined"),
