@@ -197,8 +197,10 @@ function stepFunction(title, pxin, pxout) {
 
   if (scrollY >= pxin && scrollY <= pxout) {
     titleElement.style.opacity = "1";
+    titleElement.style.transform = "scale(1)"
   } else {
     titleElement.style.opacity = "0";
+    titleElement.style.transform = "scale(0.5)"
   }
 }
 
